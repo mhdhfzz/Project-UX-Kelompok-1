@@ -1,0 +1,349 @@
+:root {
+  /* --primary: #a6a6a6; */
+  --bg: #adaaaa;
+  --hdft: #141414;
+  --text: #636363;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  /* font-weight: 400; */
+  /* background-color: hsl(0, 0%, 0%); */
+  /* font-size: 16px; */
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+  color: rgb(83, 83, 83);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #2a2a2a;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+/* html,
+body {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 0px;
+} */
+
+::selection {
+  background: #ffffff;
+  color: #6e6e6e;
+}
+
+::-moz-selection {
+  background: #636363;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.section-heading h2 {
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+/*
+---------------------------------------------
+Visi Misi FTI
+---------------------------------------------
+*/
+
+section.apply-now {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0px;
+}
+
+.accordions {
+  /* border-radius: 15px; */
+  border: 2px solid var(--hdft);
+  padding: 0 0 1rem 0;
+  background-color: var(--bg);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.accordions .accordion {
+  border-bottom: 2px solid var(--hdft);
+}
+.accordions .last-accordion {
+  border-bottom: none;
+}
+.accordion-head {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--hdft);
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+  /* border-bottom: 1px solid var(--hdft); */
+}
+@media screen and (min-width: 768px) {
+  .accordion-head {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+.accordion-head .icon {
+  float: right;
+  transition: transform 200ms ease-in-out;
+}
+.accordion-head.is-open {
+  color: var(--hdft);
+  background-color: var(--text);
+  border-bottom: none;
+}
+.accordion-head.is-open .icon {
+  transform: rotate(45deg);
+}
+.accordion-body {
+  overflow: hidden;
+  padding-top: 0.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  height: 0;
+  transition: height 100ms ease-in-out;
+}
+.accordion-body > .content {
+  padding: 5px;
+  padding-top: 0;
+}
+
+/* 
+---------------------------------------------
+Struktur Organisasi
+--------------------------------------------- 
+*/
+.section.main-banner img {
+  width: 60%;
+  object-position: center center;
+}
+/* 
+---------------------------------------------
+DOSEN
+--------------------------------------------- 
+*/
+
+section.our-courses {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+
+.our-courses .item .down-content {
+  background-color: #636363;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.our-courses .item .down-content h4 {
+  padding: 25px;
+  font-size: 18px;
+  color: #1f272b;
+  text-align: left;
+}
+
+.our-courses .item .down-content .info {
+  padding: 25px;
+}
+
+.our-courses .item .down-content .info span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.our-courses .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45px);
+}
+
+.our-courses .owl-dots {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.our-courses .owl-dots .owl-dot {
+  transition: all 0.5s;
+  width: 7px;
+  height: 7px;
+  background-color: #060606;
+  margin: 0px 5px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.our-courses .owl-dots .active {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.our-courses .owl-nav .owl-prev {
+  margin-right: 10px;
+  outline: none;
+  position: absolute;
+  left: -80px;
+}
+
+.our-courses .owl-nav .owl-prev span,
+.our-courses .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+.our-courses .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f104";
+  background-color: #ffd000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+.our-courses .owl-nav .owl-prev {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-courses .owl-nav .owl-prev:hover {
+  opacity: 0.9;
+}
+
+.our-courses .owl-nav .owl-next {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-courses .owl-nav .owl-next:hover {
+  opacity: 0.9;
+}
+
+.our-courses .owl-nav .owl-next {
+  margin-left: 10px;
+  outline: none;
+  position: absolute;
+  right: -85px;
+}
+
+.our-courses .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f105";
+  background-color: #ffd000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+/* 
+---------------------------------------------
+TABEL TENDIK
+--------------------------------------------- 
+*/
+section.upcoming-meetings {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+}
+
+.table th {
+  text-align: center;
+}
+
+th,
+tr,
+td {
+  border: 1px solid #050505;
+  padding: 8px;
+}
