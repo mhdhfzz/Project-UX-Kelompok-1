@@ -56,13 +56,13 @@
                     <button class="dropbtn">Akademik
                     </button>
                     <div class="dropdown-content">
-                        <a href="/ux/jadwalperkuliahan.php">Jadwal Perkuliahan</a>
-                        <a href="http://ce.fti.unand.ac.id/">Teknik Komputer</a>
-                        <a href="http://si.fti.unand.ac.id/">Sistem Informasi</a>
+                        <a href="/ux/jadwalperkuliahan.php" target="_blank">Jadwal Perkuliahan</a>
+                        <a href="http://ce.fti.unand.ac.id/" target="_blank">Teknik Komputer</a>
+                        <a href="http://si.fti.unand.ac.id/" target="_blank">Sistem Informasi</a>
                         <a href="#">Informatika</a>
-                        <a href="http://portal.unand.ac.id/">Portal Akademik</a>
-                        <a href="http://layanan.akademik.unand.ac.id/">Sipena</a>
-                        <a href="https://pustaka.unand.ac.id/">Perpustakaan</a>
+                        <a href="http://portal.unand.ac.id/" target="_blank">Portal Akademik</a>
+                        <a href="http://layanan.akademik.unand.ac.id/" target="_blank">Sipena</a>
+                        <a href="https://pustaka.unand.ac.id/" target="_blank">Perpustakaan</a>
                     </div>
                 </div>
             </li>
